@@ -55,6 +55,8 @@
 <style>
   h3 {
     text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
   }
 
   h3::first-letter {

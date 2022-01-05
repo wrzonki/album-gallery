@@ -6,7 +6,8 @@
 }
 
 body {
-  background: #fff;
+  background: #1D976C;
+  background: linear-gradient(to right, #93F9B9, #1D976C);
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }

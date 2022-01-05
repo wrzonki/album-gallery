@@ -2,6 +2,10 @@
   import '../styles/global.css'
 </script>
 
+<svelte:head>
+  <meta name="theme-color" content="#1D976C" />
+</svelte:head>
+
 <header>
   <a href="/"><h1>Album gallery</h1></a>
 </header>
@@ -21,7 +25,8 @@
 
   a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
   }
 
   footer {

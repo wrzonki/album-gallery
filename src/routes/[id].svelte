@@ -1,13 +1,13 @@
 <script context="module">
-  export const load = async ({ fetch, page }) => {
+  export const load = async ({ fetch, params }) => {
     const requestData = async (url) => {
       const res = await fetch(url);
       return await res.json();
     };
 
     const urls = [
-      `https://jsonplaceholder.typicode.com/albums/${page.params.id}`,
-      `https://jsonplaceholder.typicode.com/albums/${page.params.id}/photos`,
+      `https://jsonplaceholder.typicode.com/albums/${params.id}`,
+      `https://jsonplaceholder.typicode.com/albums/${params.id}/photos`,
     ];
 
     const res = await Promise.all(

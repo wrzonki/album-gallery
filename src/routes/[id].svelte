@@ -57,6 +57,10 @@
     text-align: center;
   }
 
+  h3::first-letter {
+    text-transform: uppercase;
+  }
+
   .wrapper {
     display: grid;
     justify-items: center;

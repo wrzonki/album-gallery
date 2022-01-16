@@ -26,7 +26,7 @@
 </script>
 
 <script>
-  import Modal from '$lib/Modal.svelte';
+  // import Modal from '$lib/Modal.svelte';
 
   export let basicInfo;
   export let albumPhotos;
@@ -41,7 +41,7 @@
   };
 </script>
 
-<Modal {showModal} {modalTitle} {modalUrl} on:removeModal={() => { showModal = !showModal }}/>
+<!-- <Modal {showModal} {modalTitle} {modalUrl} on:removeModal={() => { showModal = !showModal }}/> -->
 
 <div>
   <h3>{basicInfo.title}</h3>

@@ -1,5 +1,7 @@
 <script>
   import '../styles/global.css'
+  import Player from '$lib/Player.svelte'
+  import { audioPlayer } from "$lib/stores/player.js";
 </script>
 
 <svelte:head>
@@ -8,9 +10,12 @@
 
 <header>
   <a href="/"><h1>Album gallery</h1></a>
+  <a href="/about"><h1>About</h1></a>
 </header>
 <slot/>
 <footer>
+  <Player/>
+  <span>Now playing artist: {$audioPlayer.artistName || 'none'}</span>
   <a href="https://github.com/wrzonki/album-gallery">
     <img src="/gh.png" alt="git-hub logo"/>
   </a>
@@ -30,6 +35,12 @@
   }
 
   footer {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
     position: fixed;
     bottom: 0;
     left: 0;

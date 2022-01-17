@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
 export const audioPlayer = writable({
-  url: '',
-  name: '',
-  id: '',
+  id: 237,
+  name: 'song 1',
+  url: 'https://pawel-wrzosek.pl/stock-audio/1.mp3',
 });

@@ -11,21 +11,25 @@
 <header>
   <a href="/"><h1>Album gallery</h1></a>
   <a href="/about"><h1>About</h1></a>
+  <a href="https://pawel-wrzosek.pl"><h1>Author</h1></a>
 </header>
 <slot/>
 <footer>
   <Player/>
-  <span>Now playing artist: {$audioPlayer.artistName || 'none'}</span>
+  <span>Now playing: {$audioPlayer.name || 'none'}</span>
   <a href="https://github.com/wrzonki/album-gallery">
     <img src="/gh.png" alt="git-hub logo"/>
   </a>
 </footer>
 
 <style>
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
   h1 {
     text-align: center;
     font-size: 900;
-    font-style: italic;
   }
 
   a {

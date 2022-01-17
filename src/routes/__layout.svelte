@@ -15,11 +15,15 @@
 </header>
 <slot/>
 <footer>
-  <Player/>
-  <span>Now playing: {$audioPlayer.name || 'none'}</span>
-  <a href="https://github.com/wrzonki/album-gallery">
-    <img src="/gh.png" alt="git-hub logo"/>
-  </a>
+  <div>
+    <Player/>
+  </div>
+  <div>
+    <span>Now playing: {$audioPlayer.name || 'none'}</span>
+    <a href="https://github.com/wrzonki/album-gallery">
+      <img src="/gh.png" alt="git-hub logo"/>
+    </a>
+  </div>
 </footer>
 
 <style>
@@ -41,7 +45,7 @@
   footer {
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 10px;

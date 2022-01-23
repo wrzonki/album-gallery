@@ -4,4 +4,6 @@ export const audioPlayer = writable({
   id: null,
   name: '',
   url: '',
+  artist: '',
+  image: '',
 });
